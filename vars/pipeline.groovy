@@ -4,17 +4,12 @@ def call(List<String> repositories) {
         stages {
             stage('Build') {
                 steps {
-                    echo "Building..."
+                    echo "Building: ${repositories}"
                 }
             }
             stage('Deploy') {
                 steps {
                     echo "Deploying..."
-                }
-            }
-            stage('Cleanup') {
-                steps {
-                    echo "Cleanup..."
                 }
             }
         }
