@@ -2,7 +2,7 @@ def call(Map input) {
     pipeline {
         agent any
         parameters {
-            string(name: 'repositories', defaultValue: 'repo1,repo2', description: 'Comma-separated list of repositories to build')
+            string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
         }
         stages {
             stage('Build') {
