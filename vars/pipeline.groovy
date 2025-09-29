@@ -1,4 +1,4 @@
-def build_java(List<String> repositories) {
+def call(List<String> repositories) {
     pipeline {
         agent any
         stages {
