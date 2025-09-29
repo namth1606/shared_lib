@@ -1,3 +1,3 @@
 package org.cimb
-class Pipepline {
+class Utils {
 }

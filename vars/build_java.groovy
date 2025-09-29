@@ -1,6 +1,9 @@
-def call(List<String> repositories) {
+def call(Map input) {
     pipeline {
         agent any
+        parameters {
+            string(name: 'repositories', defaultValue: 'repo1,repo2', description: 'Comma-separated list of repositories to build')
+        }
         stages {
             stage('Build') {
                 steps {
